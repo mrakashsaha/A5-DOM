@@ -51,7 +51,7 @@
                 <div class="navbar-end">
                     <div class="flex justify-center items-center space-x-2">
                         <div><img src="./assets/coin.png" alt=""></div>
-                        <div><h2 class="font-normal md:font-medium text-lg md:text-xl text-brandBlack/60"><span>5020</span> BDT</h2></div>
+                        <div><h2 class="font-normal md:font-medium text-lg md:text-xl text-brandBlack/60"><span id="balance">5020</span> BDT</h2></div>
                     </div>
                 </div>
             </div>
@@ -64,12 +64,13 @@
             <!-- Toggle Button Section -->
             <div class="container mx-auto">
                 <div class="flex justify-center space-x-5">
-                    <button class="btn bg-brandGreen text-lg font-medium">Donation</button>
-                    <button class="btn bg-transparent border-2 text-lg font-medium">History</button>
+                    <button id="toggle-for-donation" class="btn bg-brandGreen text-lg font-medium">Donation</button>
+                    <button id="toggle-for-history" class="btn bg-transparent border-2 text-lg font-medium">History</button>
                 </div>
             </div>
             
             <!-- All Cards Section -->
+            <div id="all-cards" class="">
             <!-- Card 1 -->
             <div class="card bg-base-100 border-2 lg:flex lg:flex-row lg:justify-center lg:items-center">
                 <figure class="px-4 py-3">
@@ -78,16 +79,16 @@
                 <div class="card-body lg:w-1/2 lg:space-y-2">
                     <div class="flex justify-center items-center space-x-2 max-w-fit bg-brandBlack/5 px-4 py-3 rounded-lg">
                         <div><img src="./assets/coin.png" alt=""></div>
-                        <div><h2 class="font-normal md:font-medium text-base md:text-lg text-brandBlack/60"><span>0</span> BDT</h2></div>
+                        <div><h2 class="font-normal md:font-medium text-base md:text-lg text-brandBlack/60"><span id="noakhali-balance">0</span> BDT</h2></div>
                     </div>
                     <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
                     <p class="text-base font-light text-brandBlack/70 text-justify"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                     <div class="card-actions space-y-2">
                         <div class="w-full">
-                            <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                            <input id="noakhali-input-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
                         </div>
                         <div class="w-full">
-                            <button class="btn w-full text-xl font-semibold bg-brandGreen">Donate Now</button>
+                            <button id="noakhali-donation-btn" class="btn w-full text-xl font-semibold bg-brandGreen">Donate Now</button>
                         </div>
                     </div>
                 </div>
@@ -151,10 +152,21 @@
                     </div>
                 </div>
             </div>
+            </div>
+
+            <!-- Donation History Section -->
+             <div id="all-history" class="hidden">
+                <h2>This is the history section</h2>
+             </div>
          </section>
     </main>
     <footer class="bg-[#F9F7F3] h-20">
 
     </footer>
+
+
+    <!-- Java Script -->
+     <script src="./js/utilities.js"></script>
+     <script src="./js/script.js"></script>
 </body>
 </html>
