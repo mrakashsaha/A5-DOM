@@ -35,9 +35,9 @@
       <link rel="stylesheet" href="style.css">
 </head>
 <body class="lexend text-[brandBlack]">
-    <header>
+    <header class="sticky top-0 left-0 right-0 z-50">
         <!-- NavBar Start Here -->
-        <div class="nav-container bg-[#F9F7F3] pt-2 md:pt-6 pb-6 md:pb-10">
+        <div class="nav-container bg-[#F9F7F3]/90 pt-2 md:pt-6 pb-6 md:pb-8">
             <div class="navbar container mx-auto">
                 <div class="navbar-start">
                     <button class="btn bg-brandGreen text-lg md:text-xl font-medium md:font-semibold sm:px-4 md:px-8">Blog</button>
@@ -55,20 +55,18 @@
                     </div>
                 </div>
             </div>
+        <!-- Toggle Button Section -->
+        <div class="container mx-auto mt-6">
+            <div class="flex justify-center space-x-5">
+                <button id="toggle-for-donation" class="btn bg-brandGreen text-lg font-medium">Donation</button>
+                <button id="toggle-for-history" class="btn bg-transparent border-2 text-lg font-medium">History</button>
+            </div>
+        </div>
         </div>
         <!-- NavBar End Here -->
     </header>
     <main>
          <section class='w-11/12 sm:w-10/12 mx-auto space-y-8 py-12'>
-
-            <!-- Toggle Button Section -->
-            <div class="container mx-auto">
-                <div class="flex justify-center space-x-5">
-                    <button id="toggle-for-donation" class="btn bg-brandGreen text-lg font-medium">Donation</button>
-                    <button id="toggle-for-history" class="btn bg-transparent border-2 text-lg font-medium">History</button>
-                </div>
-            </div>
-            
             <!-- All Cards Section -->
             <div id="all-cards" class="space-y-4 sm:space-y-6 md:space-y-8">
             <!-- Card 1 Start-->
@@ -167,11 +165,11 @@
 
             <!-- Donation History Section -->
              <div id="all-history" class="hidden space-y-4 sm:space-y-6">
-                <h2 id="empty-donation" class="flex justify-center">No donation have been made yet.</h2>
+                <h2 id="empty-donation" class="flex justify-center text-red-500">No donation have been made yet.</h2>
              </div>
          </section>
     </main>
-    <footer class="bg-[#F9F7F3] h-20">
+    <footer class="bg-[#F9F7F3] h-32">
 
     </footer>
 
