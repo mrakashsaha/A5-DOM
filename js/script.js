@@ -11,25 +11,25 @@ document.getElementById('toggle-for-history').addEventListener ('click', functio
     toggleBtnColor (event.target.id);
 })
 
-let balance = getValueFromInnerText ('balance');
-
-
 document.getElementById('noakhali-donation-btn').addEventListener ('click', function () {
-    let noakhaliBalance = getValueFromInnerText ('noakhali-balance');
     const amount = getValueFromInputField('noakhali-input-amount');
-    
-    
-    if (balance>0 && amount<=balance) {
-        balance = balance - amount;
-        noakhaliBalance = noakhaliBalance + amount;
+    let userBalance = getValueFromInnerText ('user-balance');
+    const title = getStringFromInnerText('title-noakhali');
+    donationBtnAction ('noakhali-balance', userBalance, amount, title);    
+   })
 
-        setValueToInnerText('balance', balance);
-        setValueToInnerText('noakhali-balance', noakhaliBalance);
-    }
-    
-    else {
-        alert ('Insufficient Balance!');
-    }
 
-    
+document.getElementById('feni-donation-btn').addEventListener ('click', function () {
+    const amount = getValueFromInputField('feni-input-amount');
+    let userBalance = getValueFromInnerText ('user-balance');
+    const title = getStringFromInnerText('title-feni');
+    donationBtnAction ('feni-balance', userBalance, amount, title);     
+})
+
+
+document.getElementById('quota-protest-donation-btn').addEventListener ('click', function () {
+    const amount = getValueFromInputField('quota-protest-input-amount');
+    let userBalance = getValueFromInnerText ('user-balance');
+    const title = getStringFromInnerText('title-quota');
+    donationBtnAction ('quota-protest-balance', userBalance, amount, title);     
 })
