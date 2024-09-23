@@ -36,20 +36,20 @@
       <link rel="stylesheet" href="style.css">
 </head>
 <body class="lexend text-[brandBlack]">
-    <header class="sticky top-0 left-0 right-0 z-50">
+    <header class="sticky -top-2 md:-top-6 left-0 right-0 z-50 shadow-sm">
         <!-- NavBar Start Here -->
-        <div class="nav-container bg-[#F9F7F3]/90 pt-2 md:pt-6 pb-6 md:pb-8">
-            <div class="navbar container mx-auto">
-                <div class="navbar-start">
+        <div class="nav-container bg-[#F9F7F3]/90 pt-2 md:pt-6 pb-6">
+            <div class="navbar container mx-auto flex justify-between">
+                <div class="">
                     <button class="btn bg-brandGreen text-lg md:text-xl font-medium md:font-semibold sm:px-4 md:px-8"><a href="./blog.html">Blog</a></button>
                 </div>
-                <div class="navbar-center">
+                <div class="">
                     <div class="flex justify-center items-center space-x-2 md:space-x-4">
                         <div class=""><img src="./assets/logo.png" alt="" class=""></div>
                         <div><h2 class="font-medium md:font-semibold text-lg md:text-xl">Donate <span class="hidden sm:inline">Bangladesh</span> <span class="inline sm:hidden">BD</span></h2></div>
                     </div>
                 </div>
-                <div class="navbar-end">
+                <div class="">
                     <div class="flex justify-center items-center space-x-2">
                         <div><img src="./assets/coin.png" alt=""></div>
                         <div><h2 class="font-normal md:font-medium text-lg md:text-xl text-brandBlack/60"><span id="user-balance">5020</span> BDT</h2></div>
@@ -57,7 +57,7 @@
                 </div>
             </div>
         <!-- Toggle Button Section -->
-        <div class="container mx-auto mt-6">
+        <div class="container mx-auto mt-2 md:mt-5">
             <div class="flex justify-center space-x-5">
                 <button id="toggle-for-donation" class="btn bg-brandGreen text-lg font-medium">Donation</button>
                 <button id="toggle-for-history" class="btn bg-transparent border-2 text-lg font-medium">History</button>
@@ -170,8 +170,8 @@
              </div>
          </section>
     </main>
-    <footer class="bg-[#F9F7F3] h-32">
-
+    <footer class="bg-[#F9F7F3] h-32 flex items-center justify-center">
+        <p>&copy; 2024 All Rights Reserved | Donate Bangladesh</p>
     </footer>
 
     <!-- Java Script -->

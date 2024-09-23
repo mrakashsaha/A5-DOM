@@ -36,20 +36,20 @@
       <link rel="stylesheet" href="style.css">
 </head>
 <body class="lexend text-[brandBlack]">
-    <header class="sticky top-0 left-0 right-0 z-50">
+    <header class="sticky -top-2 md:-top-6 left-0 right-0 z-50 shadow-sm">
         <!-- NavBar Start Here -->
-        <div class="nav-container bg-[#F9F7F3]/90 pt-2 md:pt-6 pb-6 md:pb-8">
-            <div class="navbar container mx-auto">
-                <div class="navbar-start">
+        <div class="nav-container bg-[#F9F7F3]/90 pt-2 md:pt-6 pb-6">
+            <div class="navbar container mx-auto flex justify-between">
+                <div class="">
                     <button class="btn bg-brandGreen text-lg md:text-xl font-medium md:font-semibold sm:px-4 md:px-8"><a href="./index.html">Home</a></button>
                 </div>
-                <div class="navbar-center">
+                <div class="">
                     <div class="flex justify-center items-center space-x-2 md:space-x-4">
                         <div class=""><img src="./assets/logo.png" alt="" class=""></div>
                         <div><h2 class="font-medium md:font-semibold text-lg md:text-xl">Donate <span class="hidden sm:inline">Bangladesh</span> <span class="inline sm:hidden">BD</span></h2></div>
                     </div>
                 </div>
-                <div class="navbar-end">
+                <div class="">
                     <div class="flex justify-center items-center space-x-2">
                         <div><img src="./assets/coin.png" alt=""></div>
                         <div><h2 class="font-normal md:font-medium text-lg md:text-xl text-brandBlack/60"><span id="user-balance">5020</span> BDT</h2></div>
@@ -60,42 +60,68 @@
         <!-- NavBar End Here -->
     </header>
     <main>
-        <div class="mockup-window bg-brandGreen border container mx-auto mt-20">
+        <div class="mockup-window bg-brandGreen border w-11/12 sm:w-3/4 mx-auto mt-20 shadow-xl">
             <div class="bg-white px-4 py-16 space-y-8">
                 <!-- Window Start -->
-                <h3 class="text-2xl font-bold">Questions About Document Object Model</h3>
+                <h3 class="text-2xl font-bold flex justify-center">FAQs About the Document Object Model (DOM)</h3>
                 <div class="join join-vertical w-full">
                     <div class="collapse collapse-arrow join-item border-base-300 border">
                       <input type="radio" name="my-accordion-4" checked="checked" />
                       <div class="collapse-title text-xl font-medium">1. What is the DOM in JavaScript?</div>
                       <div class="collapse-content">
-                        <p>The Document Object Model (DOM) is a programming interface that represents the structure of an HTML or XML document as a tree of objects. JavaScript can interact with the DOM to manipulate elements, attributes, and styles dynamically.</p>
+                        <p class="text-lg">The Document Object Model (DOM) is a programming interface that represents the structure of an HTML or XML document as a tree of objects. JavaScript can interact with the DOM to manipulate elements, attributes, and styles dynamically.</p>
                       </div>
                     </div>
                     <div class="collapse collapse-arrow join-item border-base-300 border">
-                      <input type="radio" name="my-accordion-4" />
-                      <div class="collapse-title text-xl font-medium">How do I access elements in the DOM?</div>
+                      <input type="radio" name="my-accordion-4"/>
+                      <div class="collapse-title text-xl font-medium">2. What is the importance of the DOM in web development?</div>
                       <div class="collapse-content">
-                        <p>You can access elements in the DOM using methods like:
+                        <p class="text-lg">The Document Object Model (DOM) is a programming interface that represents the structure of an HTML or XML document as a tree of objects. JavaScript can interact with the DOM to manipulate elements, attributes, and styles dynamically.</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                      <input type="radio" name="my-accordion-4"/>
+                      <div class="collapse-title text-xl font-medium">3. Can I create new elements in the DOM?</div>
+                      <div class="collapse-content">
+                        <p class="text-lg">Yes, you can create new elements using methods like document.createElement('tagName'), then append them to the DOM using methods like appendChild() or insertBefore().</p>
+                      </div>
+                    </div>
 
-                            document.getElementById()
-                            document.getElementsByClassName()
-                            document.getElementsByTagName()
-                            document.querySelector() and document.querySelectorAll()</p>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                      <input type="radio" name="my-accordion-4" />
+                      <div class="collapse-title text-xl font-medium">4. What is event handling in the DOM?</div>
+                      <div class="collapse-content">
+                        <p class="text-lg">Event handling refers to the way JavaScript responds to user interactions (like clicks, key presses, etc.) with elements in the DOM. You can add event listeners using the addEventListener method, allowing you to execute code when a specific event occurs.</p>
                       </div>
                     </div>
                     <div class="collapse collapse-arrow join-item border-base-300 border">
                       <input type="radio" name="my-accordion-4" />
-                      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                      <div class="collapse-title text-xl font-medium">5. What is the difference between the document and window objects?</div>
                       <div class="collapse-content">
-                        <p>hello</p>
+                        <p class="text-lg">The document object represents the content of the web page (the DOM), while the window object represents the browser window itself. The window object provides methods and properties for controlling the browser, while the document object focuses on the document content.</p>
                       </div>
                     </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                      <input type="radio" name="my-accordion-4" />
+                      <div class="collapse-title text-xl font-medium">6. What are nodes in the DOM?</div>
+                      <div class="collapse-content">
+                        <p class="text-lg">In the DOM, nodes are the building blocks of the document structure. There are different types of nodes, including:</p>
+                        <ul class="list-disc ml-10 text-lg">
+                          <li>Element nodes: Represent HTML elements.</li>
+                          <li>Text nodes: Contain the text inside elements.</li>
+                          <li>Comment nodes: Represent comments in the HTML.</li>
+                        </ul>
+                      </div>
+                    </div>
+
                   </div>
                 <!-- Window END-->
             </div>
           </div>
     </main>
+    <footer class="bg-[#F9F7F3] h-32 flex items-center justify-center mt-24">
+      <p>&copy; 2024 All Rights Reserved | Donate Bangladesh</p>
+  </footer>
     <!-- Java Script -->
      <script src="./js/utilities.js"></script>
      <script src="./js/script.js"></script>
